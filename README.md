@@ -9,14 +9,14 @@ Java inheritance exercise for a package delivery service.
 - `OvernightPackage`: extends `Package` and adds an extra fee per ounce.
 - `Main`: creates all three package types and checks costs and invalid inputs.
 
-All classes are included in `Main.java`. ZIP codes are stored as strings to preserve leading zeros. Weight and cost per ounce must be positive and finite; extra fees must be nonnegative and finite.
+Each public class has its own file: `Package.java`, `TwoDayPackage.java`, `OvernightPackage.java`, and `Main.java`. Keep all four files in the same directory. ZIP codes are stored as strings to preserve leading zeros. Weight and cost per ounce must be positive and finite; extra fees must be nonnegative and finite.
 
 ## Run
 
 Requires JDK 8 or later. Tested with JDK 25.
 
 ```sh
-javac Main.java
+javac Package.java TwoDayPackage.java OvernightPackage.java Main.java
 java Main
 ```
 
