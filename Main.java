@@ -1,6 +1,5 @@
 import java.util.Locale;
 
-// Temel sinif: gonderici, alici ve paketin ortak bilgilerini tutar.
 class Package {
     private final String senderName;
     private final String senderAddress;
@@ -110,7 +109,6 @@ public class Main {
         TwoDayPackage twoDay = createTwoDayPackage(5.0);
         OvernightPackage overnight = createOvernightPackage(1.5);
 
-        // Ust sinif referansi, her nesnenin kendi calculateCost metodunu cagirir.
         Package[] packages = {standard, twoDay, overnight};
         double[] expectedCosts = {20.0, 25.0, 35.0};
         for (int i = 0; i < packages.length; i++) {
